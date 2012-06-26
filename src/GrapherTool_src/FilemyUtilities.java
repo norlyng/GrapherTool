@@ -16,6 +16,16 @@ public class FilemyUtilities {
 		  
 	}
 	
+	public void TestRename(String OutputFile, int runNo)
+	{
+		
+		File file = new File(OutputFile);
+		File TargetFile = new File("TestCase" + runNo);
+		
+		boolean Result = file.renameTo(TargetFile);
+		
+	}
+	
 	public boolean TestScriptsClean(){
 		boolean Result = false; 
 		
